@@ -32,6 +32,7 @@ header{
     height: 20vh;
     background-color: rgb(6, 70, 4);
     display: flex;
+    flex-direction: column;
 }
 .logo,.text__header{
     width: 100%;
@@ -43,6 +44,19 @@ header{
     font-size: 40px;
     text-align: center;
 }
-.material-symbols-outlined {
-    font-size: 70px; 
+.logo span {
+    font-size: 50px; 
+}
+
+
+@media screen and (min-width: 778px) {
+    .logo, .text__header {
+        flex-direction: row;
+    }
+    .logo {
+        width: 50%;
+    }
+    .text__header {
+        width: 50%;
+    }
 }
