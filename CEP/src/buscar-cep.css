@@ -59,15 +59,18 @@ header{
 
 
 .container{
- 
+    background-color: rgba(240, 248, 255, 0.356);
     border:  2px solid  rgb(221, 172, 9);
     padding: 30px;
     border-radius: 30px;
 }
 
-.form-grup label{
+.color label{
     color: black;
     font-size: 20px;
+}
+.color2{
+    color: rgb(44, 43, 43);
 }
 #cep{
     color: black;

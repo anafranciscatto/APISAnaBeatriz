@@ -1,9 +1,10 @@
-ScrollReveal().reveal(`.logo`,{duration:2000});
-ScrollReveal().reveal(`.text__header` ,{
-    rotate:{x:0, y: 80, z:0},
-    duration:2000
-});
-ScrollReveal().reveal(`.container`,{duration:2000});
+// ScrollReveal().reveal(`.logo`, { duration: 2000 });
+// ScrollReveal().reveal(`.text__header`, {
+//     rotate: { x: 0, y: 80, z: 0 },
+//     duration: 2000
+// });
+// ScrollReveal().reveal(`.container`, { duration: 2000 });
+
 // OBTER O VALOR DOS CAMPOS.
 const cepInput = document.querySelector('#cep');
 const btnPesquisarCEP = document.querySelector('#btnPesquisar');
@@ -16,14 +17,13 @@ cepInput.addEventListener('keypress', (event) => {
 
     // VERIFICA SE A TECLA PRESSIONADA NÃO É UM NÚMERO (CÓDIGO ASCII ENTRE 48 E 57)
     if (keyCode < 48 || keyCode > 57) {
-        // SE NÃO FOR UM NÚMERO, CANCELA  A ENTRADA E EXIBE UMA MENSAGEM PARA O USUÁRIO.
+        // SE NÃO FOR UM NÚMERO, CANCELA A ENTRADA E EXIBE UMA MENSAGEM PARA O USUÁRIO.
         event.preventDefault();
         alert("Digite apenas números.");
     }
 });
 
 const obterDadosApi = async (cep) => {
-
     // ARMAZENAR O ENDEREÇO DE REQUISIÇÃO DA API.
     const apiUrl = `https://viacep.com.br/ws/${cep}/json/`;
     // ARAMAZENAR A RESPOSTA.
@@ -43,10 +43,10 @@ const obterDadosApi = async (cep) => {
 btnPesquisarCEP.addEventListener('click', (e) => {
     e.preventDefault();
 
-    if (cepInput.value.length < 8 || cepInput.value.length > 8) {
-        // MENOS DE 8 DÍGITOS, EXIBE UMA MENSAGEM PARA O USUÁRIO.
+    if (cepInput.value.length !== 8) {
+        // MENOS OU MAIS DE 8 DÍGITOS, EXIBE UMA MENSAGEM PARA O USUÁRIO.
         alert('Por favor, digite um CEP válido com 8 dígitos.');
-        document.querySelector('#cep').value = '';
+        cepInput.value = '';
         return;
     }
     obterDadosApi(cepInput.value);
@@ -68,8 +68,7 @@ const atribuirCampos = (data) => {
 }
 
 btnLimpar.addEventListener('click', () => {
-
-    document.querySelector('#cep').value = '';
+    cepInput.value = '';
     document.querySelector('#rua').value = '';
     document.querySelector('#complemento').value = '';
     document.querySelector('#bairro').value = '';
