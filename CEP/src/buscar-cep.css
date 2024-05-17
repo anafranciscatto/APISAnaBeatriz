@@ -45,18 +45,38 @@ header{
     text-align: center;
 }
 .logo span {
-    font-size: 50px; 
+    font-size: 70px; 
 }
 
 
-@media screen and (min-width: 778px) {
-    .logo, .text__header {
+@media only screen and (min-width: 768px) {/*TABLET*/
+    header{
+        width: 100vw;
+        height: 20vh;
+        background-color: rgb(6, 70, 4);
+        display: flex;
+        flex-direction: column;
         flex-direction: row;
+        justify-content: space-around;
     }
-    .logo {
+    .logo{
         width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 15px;
     }
-    .text__header {
+    .text__header{
         width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 15px;
+        font-size: 60px;
+    }
+    .logo span {
+        font-size: 100px; 
     }
 }
