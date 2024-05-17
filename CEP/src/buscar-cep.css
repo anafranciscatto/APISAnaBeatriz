@@ -57,6 +57,18 @@ header{
 }
 
 
+.container{
+ 
+    border:  2px solid  rgb(221, 172, 9);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.form-grup label{
+    color: black;
+}
+
+
 @media only screen and (min-width: 768px) {/*TABLET*/
     header{
         width: 100vw;
