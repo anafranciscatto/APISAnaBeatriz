@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cinzel", serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #002147; /* Azul royal */
+    color: white;
+    padding: 10px 0;
+   
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+     font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #66a3ff; /* Azul claro para o hover */
+}
+
+.logo {
+    font-size: 1.8rem;
+}
+
+/* Hero section */
+.hero {
+    background-image: linear-gradient(#2726358f,#2f2b5b9d), url('/static/images/Captura\ de\ tela\ 2024-05-28\ 222754.png');
+    width: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+
+
+.carousel img {
+    max-width: 100%;
+    display: none;
+    border-radius: 8px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #66a3ff; /* Azul claro */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #004080; /* Azul mais escuro no hover */
+}
+
+/* Features section */
+.features {
+    background-color: #f0f0f0; /* Fundo cinza claro */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    max-width: 300px;
+    margin: 0 auto 40px;
+}
+
+.feature-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #002147; /* Azul royal */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 60px;
+}

@@ -1,0 +1,227 @@
+/* 
+.cinzel-<uniquifier> {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ html{
+    font-family: "Cinzel", serif;
+ }
+body{
+    background-color: var(--branco);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #002147; /* Azul royal */
+    color: white;
+    padding: 10px 20px;
+   
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+     font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #66a3ff; /* Azul claro para o hover */
+}
+
+.logo {
+    font-size: 1.8rem;
+}
+
+/* Estilo do formulário de busca */
+.search {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(var(--azul-preto), var(--branco));
+}
+
+.form-search {
+    display: inline-block;
+}
+
+input[type="search"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--azul-preto);
+    width: 200px;
+}
+
+button[type="submit"] {
+    background-color: var(--azul-preto);
+    color: var(--branco);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo da seção de dados */
+.data {
+    text-align: center;
+    margin-top: 20px;
+    width: 100vw;
+    height: auto;
+}
+
+.weather {
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 25px;
+    padding: 20px 0;
+    background-color: var(--branco);
+}
+
+.temo_clima {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 0;
+    background-color: var(--azul-preto);
+    color: var(--branco);
+}
+.temo_clima  p{
+    color: var(--branco)
+}
+.temp {
+    padding: 20px 0;
+    margin: 0 40px 0 40px;
+}
+
+
+.temp_value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.temp_description {
+    font-size: 16px;
+    color: var(--azul-preto);
+}
+
+.container_infos {
+    margin: auto 0;
+    margin-top: 20px;
+    max-width: 400px;
+    margin: auto;
+    padding: 50px 0;
+}
+.other_infos{
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+}
+.info {
+    padding: 10px;
+    color: var(--branco);
+    background-color: var(--azul-preto);
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+    color: var(--branco);
+    background-color: var(--azul-preto);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10px 0 10px;
+    
+}
+.info p{
+    color: var(--branco);
+}
+.info h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.temp_max,
+.temp_min,
+.humidity,
+.wind {
+    font-size: 14px;
+    color: var(--azul-preto);
+}
+.alert.show{
+    display: flex;
+}
+/* Estilo das mensagens de alerta */
+.alert {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dourado);
+    color: #333;
+    font-size: 1rem;
+    padding: 5rem;
+    text-align: center;
+    height: calc(100vh-35vh);
+}
+
+@media(min-width:766px){
+    header h1{
+        font-size: 3rem;
+    }
+    .temp_value{
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 55px;
+    }
+}
+/* iconis */
+.fa-temperature-high:before{
+    color: var(--dourado);
+}
+.fa-temperature-low:before{
+    color: var(--azul-escuro);
+}
+.fa-droplet:before{
+color: var(--azul-escuro);
+}
+.fa-wind:before{
+    width: 533px;
+    height: auto;
+    color:var(--roxo);
+}
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,0 +1,11 @@
+/* roteamento de cor  */
+:root {
+    --azul-preto: #272635;
+    --azul-bebe: #C0DAE0;
+    --azul-escuro:#4d9fad;
+    --roxo: rgb(128, 95, 158);
+    --areia:#CECECE;
+    --areia-trasparente:#cecece9f;
+    --branco:#E5E6EF;
+    --dourado:#E1A942;
+  }

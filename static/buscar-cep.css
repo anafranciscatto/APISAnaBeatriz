@@ -1,0 +1,169 @@
+/* 
+.cinzel-<uniquifier> {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body{
+  background-image: linear-gradient(#2726358f,#2f2b5b9d), url('https://t4.ftcdn.net/jpg/03/38/37/73/240_F_338377354_1Y6oyGrvaae2kqY3YS07b6X4NDKZntne.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Cinzel", serif;
+
+  overflow-x: hidden;
+ }
+ html{
+    font-family: "Cinzel", serif;
+ }
+ .logo,.text__header{
+     width: 100%;
+     height: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--azul-preto);
+     color: var(--branco);
+     font-size: 40px;
+     text-align: center;
+ }
+ .logo span {
+     font-size: 70px; 
+ }
+ form {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: black;
+    border-radius: 20px;
+}
+.form-group{
+    background-color: var(--areia);
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #ffffffad;
+    color: black
+}
+label, input{
+    padding: 5px 0 5px 10px;
+    color: black
+}
+input{
+    font-weight: 500; /* Medium */
+}
+.informar{
+    background-color: #2726358f;
+}
+/* Adicione isso no arquivo buscar-cep.css */
+.hide {
+    display: none;
+}
+
+#mensagemCopiado {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+.hide {
+    display: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
+ @media only screen and (min-width: 768px) {/*TABLET*/
+     header{
+         width: 100vw;
+         height: 20vh;
+         display: flex;
+         flex-direction: column;
+         flex-direction: row;
+         justify-content: space-around;
+     }
+     .logo{
+         width: 40%;
+         height: 100%;
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         padding: 0 15px;
+     }
+     .text__header{
+         width: 50%;
+         height: 100%;
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         padding: 0 15px;
+         font-size: 60px;
+     }
+     .logo span {
+         font-size: 100px; 
+     }
+ }
+ 
+ 
+/* Navbar */
+.navbar {
+    background-color: #002147; /* Azul royal */
+    color: white;
+    padding: 10px 20px;
+   
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+     font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #66a3ff; /* Azul claro para o hover */
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 1.8rem;
+}
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
